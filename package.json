@@ -1,19 +1,19 @@
 {
-  "name": "js13k-toolkit",
-  "version": "2.0.0",
-  "description": "A simple tool for developing a JS game while keeping it under 13kb zipped",
+  "name": "glitchfield",
+  "version": "1.0.0",
+  "description": "Glitchfield game for js13kgames competition",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/lucaspenney/js13k-toolkit.git"
+    "url": "https://github.com/ajakubo1/glitchfield"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lucaspenney/js13k-toolkit/issues"
+    "url": "https://github.com/ajakubo1/glitchfield/issues"
   },
   "dependencies": {},
   "devDependencies": {
