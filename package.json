@@ -25,6 +25,9 @@
     "gulp-uglify": "^2.0.0",
     "gulp-watch": "^4.3.9",
     "gulp-zip": "^3.2.0",
-    "mkdirp": "^0.5.1"
+    "mkdirp": "^0.5.1",
+    "gamegine": "git://github.com/ajakubo1/gamegine.git",
+    "game-prototyper": "https://github.com/ajakubo1/game-prototyper",
+    "fpsmeter": "https://github.com/darsain/fpsmeter"
   }
 }

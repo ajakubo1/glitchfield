@@ -37,7 +37,9 @@ gulp.task('init', (done) => {
 });
 
 gulp.task('build-js', (done) => {
-	return gulp.src('./src/js/**/*.js')
+	return gulp.src(['./node_modules/gamegine/src/gamegine.js',
+		'./node_modules/game-prototyper/prototyper2d.js',
+		'./src/js/**/*.js'])
 	.pipe(concat('game.js'))
 	.pipe(uglify())
 	.pipe(gulp.dest('./build/'));
