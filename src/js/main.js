@@ -6,7 +6,8 @@ var config = {
 
 var GAME = function () {
     this.glitchField = new GlitchField();
-    this.glitchScreen = new GlitchScreen();
+    this.map = new Map();
+    this.glitchScreen = new GlitchScreen(this.map);
 };
 
 GAME.prototype.render = function (context) {
@@ -23,9 +24,29 @@ GAME.prototype.init = function () {
 
 };
 
+GAME.prototype.keyPressed = function (event) {
+    console.info(event.keyCode)
+    key = event.keyCode;
+    if (key === 65 || key === 37) {
+        //UP
+    } else if (key === 87 || key === 38) {
+        //LEFT
+    } else if (key === 83 || key === 40) {
+        //DOWN
+    } else if (key === 68 || key === 39) {
+        //RIGHT
+    }
+};
+
+GAME.prototype.click = function (event) {
+    console.info('click')
+};
+
 
 document.addEventListener('DOMContentLoaded', function () {
     var game = new GAME();
+    window.addEventListener('keyup', game.keyPressed);
+    window.addEventListener('click', game.click);
     var gamegine = new GAMEGINE(config, game);
     gamegine.start();
 });

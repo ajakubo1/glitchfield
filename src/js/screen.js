@@ -3,11 +3,12 @@
  */
 
 
-var GlitchScreen = function () {
+var GlitchScreen = function (map) {
     this.positionX = 0;
     this.positionY = 0;
     this.width = 650;
     this.height = 600;
+    this.map = map;
     this.image = PROTOTYPER.generateRectCanvas(this.width, this.height, {
         x: 2,
         y: 2,
