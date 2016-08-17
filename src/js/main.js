@@ -45,6 +45,7 @@ GAME.prototype.click = function (event) {
 
 document.addEventListener('DOMContentLoaded', function () {
     var game = new GAME();
+    config.canvas = CanvasHolder.getCanvas(config.canvas);
     window.addEventListener('keyup', game.keyPressed);
     window.addEventListener('click', game.click);
     var gamegine = new GAMEGINE(config, game);

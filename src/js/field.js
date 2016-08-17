@@ -4,10 +4,7 @@
 
 
 var GlitchField = function () {
-    this.canvas = document.getElementById('pipes');
-    this.canvas.width = 150;
-    this.canvas.height = 600;
-    this.context = this.canvas.getContext('2d');
+    this.context = CanvasHolder.getContext('pipes');
     this.glitchPipes = [ new GlitchPipe(0), new GlitchPipe(1), new GlitchPipe(2), new GlitchPipe(3) ];
 };
 
