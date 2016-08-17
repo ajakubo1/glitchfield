@@ -25,21 +25,26 @@ GAME.prototype.init = function () {
 };
 
 GAME.prototype.keyPressed = function (event) {
-    console.info(event.keyCode)
+    console.info(event.keyCode);
     key = event.keyCode;
     if (key === 65 || key === 37) {
         //UP
+        EventForwarder.fire('keyup_left', event);
     } else if (key === 87 || key === 38) {
         //LEFT
+        EventForwarder.fire('keyup_up', event);
     } else if (key === 83 || key === 40) {
         //DOWN
+        EventForwarder.fire('keyup_down', event);
     } else if (key === 68 || key === 39) {
         //RIGHT
+        EventForwarder.fire('keyup_right', event);
     }
 };
 
 GAME.prototype.click = function (event) {
-    console.info('click')
+    console.info('click');
+    EventForwarder.fire('mouse_click', event);
 };
 
 
