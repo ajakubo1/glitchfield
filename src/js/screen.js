@@ -20,7 +20,7 @@ var GlitchScreen = function (map) {
 };
 
 GlitchScreen.prototype.render = function (context) {
-    context.drawImage(this.image, 150, 0);
+    context.drawImage(this.image, 0, 0);
 };
 
 GlitchScreen.prototype.logic = function (time) {

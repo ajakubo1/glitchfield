@@ -1,10 +1,16 @@
-#game {
+#game-container {
     position: fixed;
-    background: black;
     top: 50%;
     left: 50%;
-    z-index: 1;
     transform: translate(-50%, -50%);
+    width: 800px;
+    height: 600px;
+}
+
+
+#screen, #pipes, #background, #program, #screen, #netting {
+    background: black;
+    z-index: 1;
     image-rendering: -moz-crisp-edges;
     image-rendering: -o-crisp-edges;
     image-rendering: -webkit-optimize-contrast;
@@ -12,17 +18,7 @@
     image-rendering: pixelated;
 }
 
-#game2 {
+#screen, #background, #program, #screen, #netting {
     position: fixed;
-    opacity: 0.5;
-    z-index: 2;
-    background: black;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    image-rendering: -moz-crisp-edges;
-    image-rendering: -o-crisp-edges;
-    image-rendering: -webkit-optimize-contrast;
-    -ms-interpolation-mode: nearest-neighbor;
-    image-rendering: pixelated;
+    left: 150px;
 }

@@ -1,6 +1,6 @@
 var config = {
-    canvas: 'game',
-    width: 800,
+    canvas: 'screen',
+    width: 650,
     height: 600
 };
 
