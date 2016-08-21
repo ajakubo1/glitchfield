@@ -8,9 +8,9 @@
 }
 
 
-#screen, #pipes, #background, #program, #screen, #netting {
+#glitch, #pipes, #background, #program, #foreground, #netting {
     background: black;
-    z-index: 1;
+    z-index: 5;
     image-rendering: -moz-crisp-edges;
     image-rendering: -o-crisp-edges;
     image-rendering: -webkit-optimize-contrast;
@@ -18,7 +18,23 @@
     image-rendering: pixelated;
 }
 
-#screen, #background, #program, #screen, #netting {
+#glitch, #background, #program, #screen, #netting {
     position: fixed;
     left: 150px;
+}
+
+#glitch {
+    z-index: 4;
+}
+
+#foreground {
+    z-index: 3;
+}
+
+#program {
+    z-index: 2;
+}
+
+#background {
+    z-index: 1;
 }

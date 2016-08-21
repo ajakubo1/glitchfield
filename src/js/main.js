@@ -1,5 +1,5 @@
 var config = {
-    canvas: 'screen',
+    canvas: 'glitch',
     width: 650,
     height: 600
 };
@@ -8,6 +8,8 @@ var GAME = function () {
     this.glitchField = new GlitchField();
     this.map = new Map();
     this.glitchScreen = new GlitchScreen(this.map);
+
+    this.netting = new Netting();
 };
 
 GAME.prototype.render = function (context) {

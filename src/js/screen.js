@@ -4,6 +4,7 @@
 
 
 var GlitchScreen = function (map) {
+    this.context = CanvasHolder.getContext('glitch');
     this.positionX = 0;
     this.positionY = 0;
     this.width = 650;
@@ -41,7 +42,7 @@ var GlitchScreen = function (map) {
 };
 
 GlitchScreen.prototype.render = function (context) {
-    context.drawImage(this.image, 0, 0);
+    this.context.drawImage(this.image, 0, 0);
 };
 
 GlitchScreen.prototype.logic = function (time) {
