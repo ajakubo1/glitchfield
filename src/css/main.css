@@ -8,7 +8,7 @@
 }
 
 
-#glitch, #pipes, #background, #program, #foreground, #netting {
+#glitch, #pipes, #background, #defender, #foreground, #netting {
     background: black;
     z-index: 5;
     image-rendering: -moz-crisp-edges;
@@ -18,7 +18,7 @@
     image-rendering: pixelated;
 }
 
-#glitch, #background, #program, #screen, #netting {
+#glitch, #background, #defender, #foreground, #netting {
     position: fixed;
     left: 150px;
 }
@@ -31,7 +31,7 @@
     z-index: 3;
 }
 
-#program {
+#defender {
     z-index: 2;
 }
 

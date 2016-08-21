@@ -5,7 +5,7 @@ var config = {
 };
 
 var GAME = function () {
-    this.glitchField = new GlitchField();
+    this.glitchField = new Holder();
     this.map = new Map();
     this.glitchScreen = new GlitchScreen(this.map);
 
